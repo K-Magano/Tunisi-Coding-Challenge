@@ -4,6 +4,7 @@ function Book(title, author, read) {
     this.author = author;
     this.read = read;
   }
+
   const books = [
     new Book("Clean Code: A Handbook of Agile Software Craftsmanship", "Robert C. Martin", false),
     new Book("The Pragmatic Programmer: From Journeyman to Master", "Andrew Hunt & David Thomas", false),
@@ -21,6 +22,7 @@ function Book(title, author, read) {
   function displayBooks() {
     const tableBody = document.getElementById("book-table").getElementsByTagName("tbody")[0];
       tableBody.innerHTML = "";
+
    // Create and append the header row
    const headerRow = document.createElement("tr");
    const titleHeader = document.createElement("th");
@@ -52,6 +54,7 @@ function Book(title, author, read) {
       readCheckbox.checked = book.read;
       tableRow.classList.toggle("read", book.read);
   
+
       // Add event listener to update read status
       readCheckbox.addEventListener("change", (event) => {
         book.read = event.target.checked;
@@ -69,7 +72,7 @@ function Book(title, author, read) {
   
   // Function to add a new book to the list
   function addBook(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
 
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
