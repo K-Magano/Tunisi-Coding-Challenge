@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Book List</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div>
+    <table id="book-table"> 
+        <caption>My Reading List</caption>
+        <tbody></tbody>
+      
+    </table>
+   </div>
+
+
+<hr>
+
+<div class="container">
+    <div class="heading">Add New Book</div>
+  <form id="book-form" onsubmit="addBook(event)" class="form" action="">
+    <div class="input-field">
+
+    <input 
+    type="text" 
+    id="title" 
+    name="text" 
+    id="title"
+    required = ""
+    autocomplete="off"
+    />
+    <label for="title">Title</label>
+    </div>
+
+    <div class="input-field">
+        <input 
+        type="text" 
+        id="author" 
+        name="author"
+         required =""
+         autocomplete="off">
+    <label for="author">Author</label>
+</div>
+
+<div class="input-field">
+    
+    <input 
+    type="checkbox" 
+    id="read" 
+    name="read"
+    required =""
+    >
+    <label for="read">Read</label></div>
+
+
+<div class="btn-container">
+    <button class="btn" type="submit">Add Book</button></div>
+    
+  </form>
+</div>
+  
+</body>
+</html>
