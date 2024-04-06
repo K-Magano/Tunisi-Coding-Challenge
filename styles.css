@@ -1,8 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-   margin: 20%;
+   margin: 5%;
    background-image: url(./images/Screenshot\ 2024-04-06\ 181935.png);
    margin-top: 5%;
+
+   
+   flex-flow:row wrap;
+   justify-content:center;
+   align-items:center;
+   align-content:center;
+   padding:0 10%;
+  
 }
 
 label, button{
@@ -144,8 +152,7 @@ table {
     left: 15px;
     transform: translateY(0.6rem);
     transition: all 0.3s ease;
-  
-  
+   
   }
   
   .input-field input {
@@ -155,8 +162,7 @@ table {
     border: solid 1px #8d8d8d;
     letter-spacing: 1px;
     width: 100%;
-    background: pink;
-  }
+    }
   
   .input-field input:focus,
   .input-field input:valid {
@@ -186,4 +192,49 @@ table {
   
   .form .close {
     display: none;
+  }
+
+  /* THOUGHT BUBBLES */
+
+  
+.thought {
+   
+    background-color:#fff;
+    padding:20px;
+    border-radius:30px;
+    min-width:40px;
+    max-width:220px;
+    min-height:40px;
+    margin:20px;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .thought:before,
+  .thought:after {
+    content:"";
+    background-color:#fff;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    z-index:-1;
+  }
+  .thought:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px #fff;
+  }
+  .thought:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0 #fff,
+               -28px -6px 0 -2px #fff,
+               -24px 17px 0 -6px #fff,
+               -5px 25px 0 -10px #fff;
+    
   }
