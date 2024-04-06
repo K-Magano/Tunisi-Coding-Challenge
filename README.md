@@ -31,3 +31,9 @@ properties.
 to the webpage.
 • Used event listeners to handle form submissions and checkbox
 changes.
+
+**Python challenge**
+
+A python function that can traverse through an
+integer array and return the smallest, median and highest numbers.
+Function can be any length, it only takes in intigers, if any strings are found an error is displayed.
